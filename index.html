@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link href="src/style.css" rel="stylesheet"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>SheCodes Weather App</title>
+  </head>
+
+  <body>
+    <div class="weather-app" id="search-form">
+      <div>
+        <input id="city-input" placeholder="Search for your city..." />
+        <button>Search</button>
+        <button class="button-current" id="current-location-button">Current</button
+      </div>
+
+      <div class="city-name">
+        <h1 id="city">Abuja</h1>
+        <p id=date></p>
+        <p id="description"></p>
+      </div>
+
+      <div class="weather">
+          <div class="temp">
+            <span class="emoji">☀️</span>
+            <span class="temperature" id="temperature">33</span><span class="size">°C</span>
+          </p>
+          </div>
+
+          <div class="condition">
+              <p>Humidity: <span id="humidity"></span>%</p>
+              <p>Wind: <span id="wind"></span>km/hr</p>
+              <p>Precipitation: <span id="precipitation"></span>%</p>
+            </div>
+          </div>  
+
+      <div>
+        <ul>
+          <li>
+            <p>Thurs</p>
+            <p>🌦️</p>
+            <p>27°C</p>
+          </li>
+          <li>
+            <p>Fri</p>
+            <p>⛈️</p>
+            <p>23°C</p>
+          </li>
+          <li>
+            <p>Sat</p>
+            <p>⛅</p>
+            <p>29°C</p>
+          </li>
+          <li>
+            <p>Sun</p>
+            <p>☁️</p>
+            <p>20°C</p>
+          </li>
+          <li>
+            <p>Mon</p>
+            <p>🌤️</p>
+            <p>30°C</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>

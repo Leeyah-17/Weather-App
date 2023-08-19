@@ -1,0 +1,100 @@
+div.weather-app {
+    border: 1px solid #36363654;
+    overflow: auto;
+    max-width: max-content;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto;
+  }
+  
+  input {
+    padding: 10px;
+    width: 200px;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 18px;
+  }
+  
+  button,
+  .button-current {
+    padding: 10px;
+    color: #fff;
+    background: #0b9d00;
+    width: 80px;
+    border: transparent;
+    font-size: 18px;
+  }
+  
+  button.button-current {
+    background-color: blue;
+  }
+  
+  button:hover {
+    border: 2px solid #076300;
+  }
+  
+  div.city-name {
+    line-height: 30%;
+    margin-top: 40px;
+    margin-left: 10px;
+  }
+  
+  h1 {
+    font-weight: lighter;
+    font-size: 32px;
+  }
+  
+  div p {
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
+  div.weather {
+    margin-top: 15px;
+    margin-left: 65px;
+  }
+  
+  div.condition {
+    line-height: 5%;
+    margin-left: 80px;
+    margin-top: 0;
+  }
+  
+  div ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 0;
+  }
+  
+  li {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }
+  
+  #date {
+    font-size: 20px;
+  }
+  
+  .emoji {
+    font-size: 45px;
+  }
+  
+  .temp {
+    font-size: 55px;
+    font-weight: bold;
+  }
+  
+  .size {
+    font-size: 20px;
+    font-weight: lighter;
+    position: relative;
+    top: -20px;
+    text-decoration: none;
+  }
