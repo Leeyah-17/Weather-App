@@ -98,3 +98,18 @@ div.weather-app {
     top: -20px;
     text-decoration: none;
   }
+
+  p.open-source {
+    text-align: center;
+    padding-right: 220px;
+  }
+
+  a.open {
+    text-decoration: none;
+    color: blueviolet;
+  }
+
+  a.open:hover {
+    color: purple;
+    text-decoration: underline;
+  }
