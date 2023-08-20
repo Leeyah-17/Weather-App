@@ -5,6 +5,7 @@ div.weather-app {
     padding: 10px;
     border-radius: 10px;
     margin: 20px auto;
+    background-color: rgb(252, 252, 220);
   }
   
   input {
@@ -13,6 +14,11 @@ div.weather-app {
     margin-top: 25px;
     margin-left: 15px;
     font-size: 18px;
+    border: 2px solid gainsboro;
+  }
+
+  input:hover {
+    border: 2px solid rgb(134, 134, 134);
   }
   
   button,
@@ -28,12 +34,18 @@ div.weather-app {
   button.button-current {
     background-color: blue;
   }
-  
-  button:hover {
-    border: 2px solid #076300;
+
+  button.button-current:hover {
+    border: 2px solid rgb(29, 29, 194);
+    background: rgb(21, 21, 167);
   }
   
-  div.city-name {
+  button:hover {
+    border: 2px solid rgb(16, 216, 16);
+    background: rgb(3, 129, 31);
+  }
+  
+  div.city {
     line-height: 30%;
     margin-top: 40px;
     margin-left: 10px;
@@ -50,27 +62,34 @@ div.weather-app {
   }
   
   div.weather {
-    margin-top: 15px;
+    margin-top: 30px;
     margin-left: 65px;
   }
   
   div.condition {
     line-height: 5%;
-    margin-left: 80px;
-    margin-top: 0;
+    margin-left: 130px;
+    margin-bottom: 0;
   }
   
   div ul {
     list-style: none;
     display: flex;
     padding: 0;
-    margin-top: 0;
+    margin-top: 30px;
   }
   
   li {
     padding: 10px;
     margin: 10px;
     text-align: center;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 227);
+  }
+
+  li:hover {
+    background-color: bisque;
   }
   
   a:hover {
@@ -83,12 +102,13 @@ div.weather-app {
   }
   
   .emoji {
-    font-size: 45px;
+    font-size: 55px;
   }
   
   .temp {
     font-size: 55px;
     font-weight: bold;
+    padding-left: 20px;
   }
   
   .size {
@@ -99,9 +119,29 @@ div.weather-app {
     text-decoration: none;
   }
 
+  a.celciuslink {
+    text-decoration: none;
+    color: blue;
+  }
+
+  a.fahrenheitlink {
+    text-decoration: none;
+    color: black;
+  }
+
+  a.celciuslink:hover {
+    color: purple;
+    text-decoration: underline;
+  }
+
+  a.fahrenheitlink:hover {
+    color: rgb(138, 22, 138);
+    text-decoration: underline;
+  }
+
   p.open-source {
     text-align: center;
-    padding-right: 220px;
+    padding-right: 250px;
   }
 
   a.open {

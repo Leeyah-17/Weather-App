@@ -16,8 +16,8 @@
         <button class="button-current" id="current-location-button">Current</button>
      </div>
 
-      <div class="city-name">
-        <h1 id="city">Abuja</h1>
+      <div class="city">
+        <h1 id="city-name">Abuja</h1>
         <p id=date></p>
         <p id="description"></p>
       </div>
@@ -25,40 +25,40 @@
       <div class="weather">
           <div class="temp">
             <span class="emoji">☀️</span>
-            <span class="temperature" id="temperature">33</span><span class="size">°C</span>
+            <span class="temperature" id="temperature">33</span><span class="size"><a href="#" class="celciuslink">°C</a>|<a href="#" class="fahrenheitlink">°F</a></span>
           </p>
           </div>
 
           <div class="condition">
               <p>Humidity: <span id="humidity"></span>%</p>
+              <p>Pressure: <span id="pressure"></span>pa</p>
               <p>Wind: <span id="wind"></span>km/hr</p>
-              <p>Precipitation: <span id="precipitation"></span>%</p>
-            </div>
-          </div>  
+          </div>
+        </div> 
 
       <div>
         <ul>
-          <li>
+          <li class="ahead">
             <p>Thurs</p>
             <p>🌦️</p>
             <p>27°C</p>
           </li>
-          <li>
+          <li class="ahead">
             <p>Fri</p>
             <p>⛈️</p>
             <p>23°C</p>
           </li>
-          <li>
+          <li class="ahead">
             <p>Sat</p>
             <p>⛅</p>
             <p>29°C</p>
           </li>
-          <li>
+          <li class="ahead">
             <p>Sun</p>
             <p>☁️</p>
             <p>20°C</p>
           </li>
-          <li>
+          <li class="ahead">
             <p>Mon</p>
             <p>🌤️</p>
             <p>30°C</p>
@@ -67,10 +67,12 @@
       </div>
     </div>
 
-    <p class="open-source">
+    <small>
+     <p class="open-source">
       <a href="https://github.com/Leeyah-17/Weather-App" class="open" target="_blank">Open-source code</a>
       by Ololade
-    </p>
+      </p>
+    </small>
 
     <script src="src/index.js"></script>
   </body>
