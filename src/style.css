@@ -6,6 +6,7 @@ div.weather-app {
     border-radius: 10px;
     margin: 20px auto;
     background-color: rgb(248, 248, 205);
+    font-family: Arial, Helvetica, sans-serif;
   }
   
   input {
@@ -51,18 +52,22 @@ div.weather-app {
     margin-left: 15px;
   }
   
-  h1, h2 {
+  h1{
     font-weight: lighter;
-    font-size: 32px;
+    font-size: 28px;
   }
   
   div p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 100;
   }
 
   p#description {
     text-transform: capitalize;
+  }
+
+  p#date {
+    font-size: 20px;
   }
   
   div.weather {
@@ -84,16 +89,28 @@ div.weather-app {
   }
   
   li {
-    padding: 10px;
+    padding: 5px 15px 5px 15px;
     margin: 10px;
     text-align: center;
-    border: 1px solid gainsboro;
-    border-radius: 3px;
     background-color: rgb(255, 255, 227);
+  }
+
+  ul li p {
+    font-size: 16px;
   }
 
   li:hover {
     background-color: bisque;
+  }
+
+  .weather-forecast-temp-min, 
+  .weather-forecast-date,
+  .weather-forecast-icon {
+    opacity: 0.5;
+  }
+
+  .weather-forecast-temp-max {
+    font-weight: 400;
   }
   
   a:hover {
@@ -101,21 +118,17 @@ div.weather-app {
     color: darkblue;
   }
   
-  #date {
-    font-size: 20px;
-  }
-  
-  .emoji {
+  img.emoji {
     font-size: 55px;
   }
   
-  .temperature {
+  span.temperature {
     font-size: 55px;
     font-weight: bold;
     padding-left: 0px;
   }
   
-  .size {
+  span.size {
     font-size: 20px;
     font-weight: lighter;
     position: relative;

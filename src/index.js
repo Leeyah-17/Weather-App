@@ -22,6 +22,26 @@ function formatDate(currentDate) {
     let day = days[dayIndex];
     return `${day} ${hours}:${minutes}`;
   }
+
+  function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
+    let forecastHTML = `<ul>`;
+    let days = ["Wed", "Thurs", "Fri", "Sat", "Sun"];
+    days.forEach(function (day) {
+    forecastHTML = forecastHTML + `
+          <li class="ahead">
+            <p class="weather-forecast-date">${day}</p>
+            <p class="weather-forecast-icon">🌦️</p>
+            <p><span class="weather-forecast-temp-max">27°</span>
+              <br/>
+              <span class="weather-forecast-temp-min">25°</span>
+            </p>
+          </li>
+    `;
+    });
+    forecastHTML = forecastHTML + `</ul>`;
+    forecastElement.innerHTML = forecastHTML;
+  }
   
   function displayWeatherCondition(response) {
     let countryElement = document.querySelector("#country");
@@ -89,3 +109,4 @@ function formatDate(currentDate) {
   celciuslink.addEventListener("click", displayCelciusTemp);
   
   searchCity("Paris");
+  displayForecast();
