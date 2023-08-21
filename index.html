@@ -11,27 +11,23 @@
   <body>
     <div class="weather-app" id="search-form">
       <div>
-        <input id="city-input" placeholder="Search for your city..." />
-        <button>Search</button>
+        <input id="city-input" placeholder="Search for your city..." autocomplete="off" />
+        <button id="city-input">Search</button>
         <button class="button-current" id="current-location-button">Current</button>
      </div>
 
       <div class="city">
-        <h1 id="city-name">Abuja</h1>
+        <h1 id="city-name"></h1>
         <p id=date></p>
         <p id="description"></p>
       </div>
 
       <div class="weather">
-          <div class="temp">
-            <span class="emoji">☀️</span>
-            <span class="temperature" id="temperature">33</span><span class="size"><a href="#" class="celciuslink">°C</a>|<a href="#" class="fahrenheitlink">°F</a></span>
+            <img class="emoji" id="icon">
+            <span  class="temperature" id="temperature"></span><span class="size"><a href="#" class="active" id="celciuslink">°C</a>|<a href="#" id="fahrenheitlink">°F</a></span>
           </p>
-          </div>
-
           <div class="condition">
               <p>Humidity: <span id="humidity"></span>%</p>
-              <p>Pressure: <span id="pressure"></span>pa</p>
               <p>Wind: <span id="wind"></span>km/hr</p>
           </div>
         </div> 
