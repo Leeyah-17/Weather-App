@@ -51,7 +51,7 @@ div.weather-app {
     margin-left: 15px;
   }
   
-  h1 {
+  h1, h2 {
     font-weight: lighter;
     font-size: 32px;
   }

@@ -24,6 +24,7 @@ function formatDate(currentDate) {
   }
   
   function displayWeatherCondition(response) {
+    let countryElement = document.querySelector("#country");
     let cityElement = document.querySelector("#city-name");
     let descriptionElement = document.querySelector("#description");
     let dateElement = document.querySelector("#date");
@@ -34,6 +35,7 @@ function formatDate(currentDate) {
     let iconUrl = `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`;
     celciusTemp = response.data.temperature.current;
   
+    countryElement.innerHTML = response.data.country;
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
     dateElement.innerHTML = formatDate(response.data.time * 1000);
