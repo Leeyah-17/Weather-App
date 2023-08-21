@@ -33,10 +33,10 @@ function formatDate(currentDate) {
     let windElement = document.querySelector("#wind");
     let iconUrl = `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`;
     celciusTemp = response.data.temperature.current;
-
+  
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
-    dateElement.innerHTML = formatDate(response.data.time);
+    dateElement.innerHTML = formatDate(response.data.time * 1000);
     iconElement.setAttribute("src", iconUrl);
     iconElement.setAttribute("alt", response.data.condition.description);
     temperatureElement.innerHTML = Math.round(celciusTemp);
@@ -78,7 +78,7 @@ function formatDate(currentDate) {
   let celciusTemp = null;
  
   let searchForm = document.querySelector("#search-form");
-  searchForm.addEventListener("click", submitButton);
+  searchForm.addEventListener("submit", submitButton);
 
   let fahrenheitlink = document.querySelector("#fahrenheitlink")
   fahrenheitlink.addEventListener("click", displayFahrenheitTemp);
