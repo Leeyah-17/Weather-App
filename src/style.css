@@ -92,7 +92,7 @@ div.weather-app {
     padding: 5px 15px 5px 15px;
     margin: 10px;
     text-align: center;
-    background-color: rgb(255, 255, 227);
+    background-color: rgb(243, 243, 197);
   }
 
   ul li p {
@@ -104,13 +104,18 @@ div.weather-app {
   }
 
   .weather-forecast-temp-min, 
-  .weather-forecast-date,
-  .weather-forecast-icon {
+  .weather-forecast-date {
     opacity: 0.5;
   }
 
+  img.weather-forecast-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
   .weather-forecast-temp-max {
-    font-weight: 400;
+    font-weight: 400px;
   }
   
   a:hover {
