@@ -79,7 +79,7 @@ function formatDate(currentDate) {
     let windElement = document.querySelector("#wind");
     let iconUrl = `https://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`;
     
-    celciusTemp = response.data.temperature.current;
+    let celciusTemp = response.data.temperature.current;
   
     countryElement.innerHTML = response.data.country;
     cityElement.innerHTML = response.data.city;
@@ -106,34 +106,7 @@ function formatDate(currentDate) {
     searchCity(cityInputted.value);
   }
 
-  function displayFahrenheitTemp(event) {
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#temperature");
-    //remove active class on the celcius link
-    celciuslink.classList.remove("active");
-    fahrenheitlink.classList.add("active");
-    let fahrenheitTemp = (celciusTemp * 9) / 5 + 32;
-    temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-  }
-
-  function displayCelciusTemp(event) {
-    event.preventDefault();
-    let temperatureElement = document.querySelector("#temperature");
-    //remove the active class the fahrenheit link
-    celciuslink.classList.add("active");
-    fahrenheitlink.classList.remove("active");
-    temperatureElement.innerHTML = Math.round(celciusTemp);
-  } 
-
-  let celciusTemp = null;
- 
   let searchForm = document.querySelector("#search-form");
   searchForm.addEventListener("submit", submitButton);
 
-  let fahrenheitlink = document.querySelector("#fahrenheitlink")
-  fahrenheitlink.addEventListener("click", displayFahrenheitTemp);
-  
-  let celciuslink = document.querySelector("#celciuslink")
-  celciuslink.addEventListener("click", displayCelciusTemp);
-  
   searchCity("Paris");

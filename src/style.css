@@ -141,24 +141,15 @@ div.weather-app {
     text-decoration: none;
   }
 
-  a{
-    text-decoration: none;
-    color: black;
-  }
-
-  a:hover{
-    text-decoration: none;
-    color: black;
-  }
-
   a.active {
-    cursor: default;
-    color: blue;
+    color: black;
     text-decoration: none;
+    cursor: default;
   }
 
-  a.active:hover {
-    text-decoration: underline;
+  a.active:hover{
+    text-decoration: none;
+    color: #000;
   }
 
   p.open-source {
